@@ -20,6 +20,7 @@ class CreateCompaniesTable extends Migration
             $table->foreignId('ceo_id')->nullable();
             $table->foreign('ceo_id')->references('id')->on('users');
             $table->string('code_ape');
+            $table->integer('subscription')->default(0);
             $table->timestamp('ape_verified_at')->nullable();
             $table->timestamps();
         });

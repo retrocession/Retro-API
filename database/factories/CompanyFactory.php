@@ -25,6 +25,7 @@ class CompanyFactory extends Factory
             'name' => 'Bijouterie ' . $this->faker->name,
             'address' => $this->faker->address,
             'code_ape' => '3212Z',
+            'subscription' => 0,
             'ape_verified_at' => now(),
         ];
     }
