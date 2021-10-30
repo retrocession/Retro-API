@@ -17,7 +17,7 @@ class Cors
     public function handle(Request $request, Closure $next)
     {
         return $next($request)
-            ->header('Access-Control-Allow-Origin', 'retro-front-f4966.ondigitalocean.app')
+            ->header('Access-Control-Allow-Origin', 'https://retro-front-f4966.ondigitalocean.app')
             ->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     }
 }
