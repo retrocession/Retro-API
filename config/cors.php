@@ -17,18 +17,18 @@ return [
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
-    'allowed_methods' => ['*'],
+    'allowed_methods' => ['POST', 'GET', 'DELETE', 'PUT', '*'],
 
-    'allowed_origins' => ['http://localhost:3000'],
+    'allowed_origins' => ['http://localhost:3000', 'https://retrocession.me'],
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => [' X-Custom-Header', 'Upgrade-Insecure-Requests', '*'],
 
-    'exposed_headers' => ['*'],
+    'exposed_headers' => false,
 
-    'max_age' => 0,
+    'max_age' => false,
 
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
